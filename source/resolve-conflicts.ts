@@ -13,7 +13,7 @@ declare module 'codemirror' {
 const editor = document.querySelector<Element & {CodeMirror: CodeMirror.Editor}>('.CodeMirror')!.CodeMirror;
 
 // Event fired when each file is loaded
-editor.on('swapDoc', () => setTimeout(addWidget, 1));
+editor.on('swapDoc', () => setTimeout(addWidget, 1));。/
 
 // Restore widget on undo
 editor.on('changes', (_, [firstChange]) => {
